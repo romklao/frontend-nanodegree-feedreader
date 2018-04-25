@@ -57,7 +57,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
         let body = $('body'),
-              menuIcon = $('.menu-icon-link');
+            menuIcon = $('.menu-icon-link');
 
         it('is hidden by default', function() {
             expect(body.hasClass('menu-hidden')).toBe(true);
