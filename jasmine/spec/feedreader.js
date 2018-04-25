@@ -83,14 +83,14 @@ $(function() {
          * loadFeed() is asynchronous so this test requires
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-        let container = $('.feed.entry');
+        let container = $('.feed');
 
         beforeEach(function(done) {
             loadFeed(0, () => done());
         });
 
         it('should have at least a single .entry element within the .feed container', function() {
-            expect(container.length).toBeGreaterThan(0);
+            expect(container.has('.entry').length).toBeGreaterThan(0);
         });
     });
     /* The test suite named "New Feed Selection" */
